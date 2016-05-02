@@ -1,28 +1,24 @@
-== README
+used:   ======
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails
 
-Things you may want to cover:
+npm
 
-* Ruby version
+react-rails gem
 
-* System dependencies
+webpack
 
-* Configuration
+devise
 
-* Database creation
+babel-loader
 
-* Database initialization
+flux
 
-* How to run the test suite
+react-router
 
-* Services (job queues, cache servers, search engines, etc.)
+postgres
 
-* Deployment instructions
+active-model
 
-* ...
+react-router
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
