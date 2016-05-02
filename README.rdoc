@@ -2,6 +2,8 @@ used:   ======
 
 Rails
 
+react
+
 npm
 
 react-rails gem
@@ -18,7 +20,7 @@ react-router
 
 postgres
 
-active-model
+active-record
 
 react-router
 
