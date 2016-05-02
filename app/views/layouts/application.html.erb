@@ -5,10 +5,26 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
-</head>
-<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 
-<%= yield %>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+
+</head>
+  <div class="right">
+    <% if user_signed_in? %>
+      Welcome, <%= link_to current_user.display_name, "/profile" %>, <%= link_to "logout",destroy_user_session_path, method: :delete %>
+    <% else %>
+      Please <%=link_to "sign in", new_user_session_path %> or <%= link_to "sign up", new_user_registration_path %>.
+    <% end %>
+  </div>
+
+  <body>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <%= yield %>
 
 </body>
 </html>
